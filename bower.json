@@ -1,0 +1,24 @@
+{
+  "name": "brockerland-landingpage",
+  "authors": [
+    "Nazareth Gutiérrez <jesusnazarethgh@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta",
+    "jquery-validation": "^1.17.0",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2"
+  }
+}

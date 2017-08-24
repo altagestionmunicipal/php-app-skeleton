@@ -1,0 +1,17 @@
+{
+  "require": {
+    "php": ">=5.4",
+    "ext-mcrypt": "*",
+    "twig/twig": "*",
+    "slim/slim": "2.*",
+    "slim/views": "*",
+    "zendframework/zend-config": "2.2.*",
+    "monolog/monolog": "1.*",
+    "illuminate/database": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Jn6h": "src/"
+    }
+  }
+}

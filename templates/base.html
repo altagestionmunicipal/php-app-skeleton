@@ -1,0 +1,36 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html>
+  <head>
+  {% block head %}
+    <meta charset="utf-8">
+    <meta content="Nazareth Gutiérrez" name="author">
+{% if constant('SLIM_MODE') != 'production' %}
+    <meta name="robots" content="noindex">
+{% endif %}
+    <meta content="{{ appcfg('seo.description') }}" name="description">
+    <meta content="{{ appcfg('seo.keywords') }}" name="keywords">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <link rel="shortcut icon" href="{{ site_url('media/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ site_url('media/favicon.ico') }}" type="image/x-icon">
+    {% block stylesheet %}
+    <link href="{{ site_url('css/main.min.css') }}" rel="stylesheet">
+    {% endblock %}
+
+    <title>{% block title %} Home {% endblock %} - Brockerland</title>
+  {% endblock %}
+  </head>
+  {% block body %}
+  <body>
+
+    {% block main %}Hello World!{% endblock %}
+
+    {% block scripts %}
+    <script src="{{ site_url('js/vendor.bundle.js') }}"></script>
+    {% endblock %}
+
+  </body>
+  {% endblock %}
+</html>
+{% endspaceless %}
